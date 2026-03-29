@@ -1,21 +1,16 @@
 # Jalveg — Premium Packaged Drinking Water Website
 
-Official website for **Jalveg Nutrient Water** by **Brother & Brother Beverages Company**.
+Official website for **Jalveg Water** by **Brother & Brother Beverages Company**.
 
----
+
 
 ## 🏢 Business Details
 
 | Field | Details |
 |-------|---------|
-| **Brand** | Jalveg — Nutrient Water |
+| **Brand** | Jalveg — Water |
 | **Company** | Brother & Brother Beverages Company |
-| **Proprietor** | Sandip Kumar Gupta |
-| **Partner** | Ravi Gupta |
-| **Phone** | +91 9696 33212 |
-| **FSSAI License** | 12724032000244 |
-| **GST Number** | 09ABDFB5076D1ZK |
-| **Address** | Genesh Nagar, Sohanpar Road, Near B.N Public School, Bhatpar Rani, Deoria, Uttar Pradesh — 274702 |
+
 
 ---
 
@@ -43,7 +38,6 @@ jalveg-website/
     └── product3.jpg    # Products section image
 ```
 
----
 
 ## 🌐 Website Sections
 
@@ -58,7 +52,7 @@ jalveg-website/
 9. **Contact** — Enquiry form + company details
 10. **Footer** — Links, address, license info
 
----
+
 
 ## ✨ Features
 
@@ -74,7 +68,6 @@ jalveg-website/
 - Golden framed product brochure display
 - Glassmorphism cards
 
----
 
 ## 🚀 How to Run Locally
 
@@ -87,7 +80,6 @@ python -m http.server 5173
 # Then open http://localhost:5173
 ```
 
----
 
 ## 🌍 How to Host
 
@@ -113,32 +105,5 @@ git push -u origin main
 ```
 Then go to GitHub repo → Settings → Pages → Deploy from `main` branch
 
----
 
-## 📤 How to Share This Code
 
-| Method | Steps |
-|--------|-------|
-| **ZIP** | Right-click folder → Send to → Compressed ZIP → share via WhatsApp/Drive |
-| **Google Drive** | Upload ZIP → Share link with "Anyone with link" |
-| **GitHub** | Push to a repo → share the GitHub URL |
-| **Live link** | Deploy to Netlify → share the `.netlify.app` URL |
-
----
-
-## 🖼️ Adding / Replacing Images
-
-To replace any image, save the new photo with the **exact same filename** in the `images/` folder.
-
-> **Important:** Windows sometimes saves `.jpg` files as `.jpg.jpg` (double extension).
-> If an image is not showing, rename `filename.jpg.jpg` → `filename.jpg`
-
----
-
-## 📞 Contact for Website Support
-
-For any changes or updates to this website, contact your web developer with the `jalveg-website` folder.
-
----
-
-*Built with ❤️ for Jalveg — Pure. Fresh. Refreshing.*

@@ -142,10 +142,30 @@ body {
   box-shadow: 0 0 15px rgba(0,201,177,0.6);
 }
 .nav-name {
-  font-size: 1.6rem;
-  font-weight: 800;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+.nav-jal {
+  background: linear-gradient(90deg, var(--aqua-light), #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: inherit;
   letter-spacing: 2px;
-  background: linear-gradient(90deg, var(--aqua-light), var(--white));
+}
+.nav-veg {
+  font-family: 'Noto Sans Devanagari', 'Mangal', sans-serif;
+  background: linear-gradient(90deg, #e8c8ff, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.nav-tm {
+  font-size: 0.65rem;
+  vertical-align: super;
+  background: linear-gradient(90deg, var(--aqua-light), #fff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -248,6 +268,26 @@ body {
   background-size: 200%;
   animation: shimmer 3s linear infinite;
 }
+.brand-jal {
+  font-family: inherit;
+  letter-spacing: 3px;
+}
+.brand-veg {
+  font-family: 'Noto Sans Devanagari', 'Mangal', sans-serif;
+  letter-spacing: 2px;
+}
+.brand-tm {
+  font-size: 2rem;
+  vertical-align: super;
+}
+.hero-sub-brand {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 10px;
+  margin-top: -6px;
+}
 .hero-tagline {
   font-size: 1.2rem;
   color: rgba(255,255,255,0.75);
@@ -343,11 +383,22 @@ body {
   gap: 20px;
   text-align: center;
 }
-.stat-item { color: white; }
+.stat-item { color: white; text-align: center; }
+.stat-num-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 3px;
+  line-height: 1;
+}
 .stat-num {
   font-size: 2.8rem;
   font-weight: 900;
-  display: block;
+  line-height: 1;
+}
+.stat-suffix {
+  font-size: 1.6rem;
+  font-weight: 900;
   line-height: 1;
 }
 .stat-label {
@@ -544,15 +595,14 @@ section { position: relative; z-index: 1; }
 #about { background: #f5eeff; }
 .about-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 70px;
-  align-items: center;
+  grid-template-columns: 1fr;
+  gap: 40px;
 }
-/* Two-owner layout */
+/* Three-owner layout */
 .about-owners-wrap {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
 }
 .owner-card {
   display: flex;

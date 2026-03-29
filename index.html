@@ -1,39 +1,686 @@
-<form name="contact" method="POST" netlify>
-  <input type="hidden" name="form-name" value="contact" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JALवेग — Pure. Fresh. Refreshing.</title>
+  <meta name="description" content="JALवेग Premium Packaged Drinking Water by Brother & Brother Beverages. Pure, mineral-balanced, and hygienically sealed." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-  <div class="form-group">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required />
+<!-- FLOATING BUBBLES BACKGROUND -->
+<div id="bubbles"></div>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar">
+  <a href="#hero" class="nav-brand">
+    <div class="nav-logo-drop">💧</div>
+    <span class="nav-name"><span class="nav-jal">JAL</span><span class="nav-veg">वेग</span><span class="nav-tm">™</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#features">Features</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#factory">Factory</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+  </ul>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <span class="hero-eyebrow">Premium Packaged Drinking Water</span>
+      <h1 class="hero-title">
+        <span class="brand-name"><span class="brand-jal">JAL</span><span class="brand-veg">वेग</span><span class="brand-tm">™</span></span>
+      </h1>
+      <p class="hero-sub-brand">Nutrient Water · Packaged Drinking Water</p>
+      <p class="hero-tagline">Pure. Fresh. Refreshing.</p>
+      <p class="hero-desc">Jalveg is a premium packaged drinking water brand by <strong>Brother &amp; Brother Beverages</strong>. Every bottle is produced using advanced RO + UV + Ozone purification technology, ensuring 100% safe, clean, and great-tasting water — from our plant directly to your table. FSSAI certified and trusted by homes, offices, and businesses.</p>
+      <div class="hero-btns">
+        <a href="#products" class="btn-primary" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'});return false;">Explore Products</a>
+        <a href="https://wa.me/91969633212?text=Hello%2C%20I%20am%20interested%20in%20ordering%20Jalveg%20water.%20Please%20share%20details." target="_blank" rel="noopener" class="btn-outline">📲 Order / Enquiry</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-bottle-wrap">
+        <div class="ripple-ring"></div>
+        <div class="ripple-ring"></div>
+        <div class="ripple-ring"></div>
+        <img src="images/bottles.jpg" alt="Jalveg Water Bottles" class="hero-bottle" />
+      </div>
+    </div>
   </div>
-
-  <div class="form-group">
-    <label for="phone">Phone</label>
-    <input type="tel" id="phone" name="phone" required />
+  <!-- Animated Wave -->
+  <div class="hero-waves">
+    <svg class="wave1" viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path fill="#f5eeff" fill-opacity="1"
+        d="M0,60 C240,100 480,20 720,60 C960,100 1200,20 1440,60 L1440,100 L0,100 Z
+           M1440,60 C1200,20 960,100 720,60 C480,20 240,100 0,60 L0,100 L1440,100 Z"/>
+    </svg>
   </div>
+</section>
 
-  <div class="form-group">
-    <label for="requirement">Requirement</label>
-    <input type="text" id="requirement" name="requirement" required />
+<!-- ===== STATS ===== -->
+<section id="stats">
+  <div class="stats-grid">
+    <div class="stat-item reveal">
+      <span class="stat-num" data-target="5">0</span>
+      <span class="stat-label">Product Sizes</span>
+    </div>
+    <div class="stat-item reveal" style="transition-delay:0.1s">
+      <div class="stat-num-row"><span class="stat-num" data-target="100">0</span><span class="stat-suffix">%</span></div>
+      <span class="stat-label">Pure &amp; Safe</span>
+    </div>
+    <div class="stat-item reveal" style="transition-delay:0.2s">
+      <div class="stat-num-row"><span class="stat-num" data-target="7">0</span></div>
+      <span class="stat-label">Quality Checks</span>
+    </div>
+    <div class="stat-item reveal" style="transition-delay:0.3s">
+      <div class="stat-num-row"><span class="stat-num" data-target="24">0</span><span class="stat-suffix">×7</span></div>
+      <span class="stat-label">Production Hours</span>
+    </div>
   </div>
+</section>
 
-  <div class="form-group">
-    <label for="message">Message</label>
-    <textarea id="message" name="message" required></textarea>
+<!-- ===== FEATURES ===== -->
+<section id="features" class="section-pad">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-tag">Why Choose Jalveg</span>
+      <h2 class="section-title">Water You Can Trust,<br>Every Single Drop</h2>
+      <p class="section-sub">Jalveg goes through a rigorous multi-stage purification process to deliver water that is pure, safe, and perfectly balanced.</p>
+    </div>
+    <div class="features-grid">
+
+      <div class="feature-card reveal" style="transition-delay:0.05s">
+        <div class="feat-icon">🔬</div>
+        <div class="feat-title">Multi-Stage Purification</div>
+        <p class="feat-desc">Our water passes through 7+ filtration and purification stages — including RO, UV, and ozonation — to eliminate all impurities.</p>
+      </div>
+
+      <div class="feature-card reveal" style="transition-delay:0.1s">
+        <div class="feat-icon">⚖️</div>
+        <div class="feat-title">Perfect Mineral Balance</div>
+        <p class="feat-desc">Carefully balanced TDS levels ensure essential minerals are retained for great taste and optimal body hydration.</p>
+      </div>
+
+      <div class="feature-card reveal" style="transition-delay:0.15s">
+        <div class="feat-icon">🛡️</div>
+        <div class="feat-title">Hygienic Sealing</div>
+        <p class="feat-desc">Bottles are sealed in a dust-free, automated environment — zero human contact from filling to packaging.</p>
+      </div>
+
+      <div class="feature-card reveal" style="transition-delay:0.2s">
+        <div class="feat-icon">♻️</div>
+        <div class="feat-title">Food-Grade PET Bottles</div>
+        <p class="feat-desc">We use BPA-free, 100% food-grade PET bottles that are safe, durable, and fully recyclable.</p>
+      </div>
+
+      <div class="feature-card reveal" style="transition-delay:0.25s">
+        <div class="feat-icon">🌡️</div>
+        <div class="feat-title">Temperature Stable</div>
+        <p class="feat-desc">Jalveg water maintains freshness and purity even when stored at varying temperatures.</p>
+      </div>
+
+      <div class="feature-card reveal" style="transition-delay:0.3s">
+        <div class="feat-icon">✅</div>
+        <div class="feat-title">FSSAI Certified</div>
+        <p class="feat-desc">Fully compliant with Indian food safety standards under FSSAI License No. 12724032000244.</p>
+      </div>
+
+    </div>
   </div>
+</section>
 
-  <button type="submit">Submit</button>
-</form>
+<!-- ===== PRODUCTS ===== -->
+<section id="products" class="section-pad">
+  <div class="container">
+    <div class="products-layout">
+      <div class="products-images reveal-l">
+        <div class="prod-img-main">
+          <img src="images/bottles.jpg" alt="Jalveg bottle range" />
+        </div>
+        <div class="prod-img-thumb">
+          <img src="images/product2.jpg" alt="Jalveg product" />
+        </div>
+        <div class="prod-img-thumb">
+          <img src="images/product3.jpg" alt="Jalveg product" />
+        </div>
+      </div>
+      <div class="reveal-r">
+        <span class="section-tag">Our Products</span>
+        <h2 class="section-title">Available in Every Size for Every Need</h2>
+        <p class="section-sub">Jalveg packaged drinking water is available in 5 convenient sizes — from a 250 ml mini bottle for on-the-go refreshment to a 20-litre bulk jar for offices and homes. Every size is filled, sealed, and quality-checked at our hygienic production facility.</p>
+        <div class="product-sizes">
+          <div class="size-item">
+            <div class="size-dot"></div>
+            <div>
+              <div class="size-name">250 ml — Mini Bottle</div>
+              <div class="size-desc">Perfect for on-the-go hydration, events & travel</div>
+            </div>
+          </div>
+          <div class="size-item">
+            <div class="size-dot"></div>
+            <div>
+              <div class="size-name">500 ml — Regular Bottle</div>
+              <div class="size-desc">Everyday personal hydration, packed lunches</div>
+            </div>
+          </div>
+          <div class="size-item">
+            <div class="size-dot"></div>
+            <div>
+              <div class="size-name">1 Litre — Family Bottle</div>
+              <div class="size-desc">Ideal for dining tables and family use</div>
+            </div>
+          </div>
+          <div class="size-item">
+            <div class="size-dot"></div>
+            <div>
+              <div class="size-name">2 Litre — Large Bottle</div>
+              <div class="size-desc">Great for offices, schools, and small gatherings</div>
+            </div>
+          </div>
+          <div class="size-item">
+            <div class="size-dot"></div>
+            <div>
+              <div class="size-name">20 Litre — Bulk Jar</div>
+              <div class="size-desc">Office dispensers, homes & commercial supply</div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:32px">
+          <a href="#contact" class="btn-primary">Request a Quote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- ===== FACTORY / GALLERY ===== -->
+<section id="factory">
+  <div class="container">
+    <div class="reveal" style="text-align:center">
+      <span class="section-tag">Our Facility</span>
+      <h2 class="section-title">State-of-the-Art<br>Production Facility</h2>
+      <p class="section-sub" style="margin:0 auto;color:rgba(255,255,255,0.65)">Our automated plant ensures every bottle is produced under the strictest hygiene and quality standards.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item reveal-l">
+        <img src="images/factory1.jpg" alt="Filling line" />
+        <div class="gallery-overlay">
+          <span class="gallery-label">Automated Filling Line</span>
+        </div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="images/factory2.jpg" alt="Sealing unit" />
+        <div class="gallery-overlay">
+          <span class="gallery-label">Precision Sealing Unit</span>
+        </div>
+      </div>
+      <div class="gallery-item reveal" style="transition-delay:0.1s">
+        <img src="images/factory3.jpg" alt="Quality check" />
+        <div class="gallery-overlay">
+          <span class="gallery-label">Quality Inspection</span>
+        </div>
+      </div>
+      <div class="gallery-item reveal-r" style="transition-delay:0.05s">
+        <img src="images/workers.jpg" alt="Workers" />
+        <div class="gallery-overlay">
+          <span class="gallery-label">Skilled Workforce</span>
+        </div>
+      </div>
+      <div class="gallery-item reveal-r" style="transition-delay:0.1s">
+        <img src="images/manager.jpg" alt="Dispatch" />
+        <div class="gallery-overlay">
+          <span class="gallery-label">Dispatch & Logistics</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section-pad">
+  <div class="container">
+    <div class="about-layout">
+      <div class="about-owners-wrap reveal-l">
+        <div class="owner-card">
+          <div class="owner-img-wrap">
+            <img src="images/sandip.jpg" onerror="this.src='images/bottles.jpg'" alt="Sandip Kumar Gupta" class="owner-img" />
+            <div class="about-badge">
+              <div class="about-badge-inner">FSSAI<br>✓</div>
+            </div>
+          </div>
+          <div class="owner-info">
+            <div class="owner-name">Sandip Kumar Gupta</div>
+            <div class="owner-role">Proprietor</div>
+          </div>
+        </div>
+        <div class="owner-card">
+          <div class="owner-img-wrap">
+            <img src="images/ravi.jpg" onerror="this.src='images/bottles.jpg'" alt="Ravi Gupta" class="owner-img" />
+          </div>
+          <div class="owner-info">
+            <div class="owner-name">Ravi Gupta</div>
+            <div class="owner-role">Partner</div>
+          </div>
+        </div>
+        <div class="owner-card">
+          <div class="owner-img-wrap">
+            <img src="images/priya.jpg" onerror="this.src='images/bottles.jpg'" alt="Priya Gupta" class="owner-img" />
+          </div>
+          <div class="owner-info">
+            <div class="owner-name">Priya Gupta</div>
+            <div class="owner-role">Partner</div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-r">
+        <span class="section-tag">About Us</span>
+        <h2 class="section-title">Brother &amp; Brother Beverages — Built on Trust</h2>
+        <p class="section-sub">We are a family-run partnership firm from Bhatpar Rani, Deoria, Uttar Pradesh — dedicated to bringing clean, safe drinking water to every household and business. Founded by <strong>Sandip Kumar Gupta</strong>, <strong>Ravi Gupta</strong> and <strong>Priya Gupta</strong>, our mission is simple: pure quality water at accessible prices.</p>
+        <ul class="about-list">
+          <li>Registered under FSSAI with License No. 12724032000244</li>
+          <li>GST Registered — GSTIN: 09ABDFB5076D1ZK</li>
+          <li>Advanced RO + UV + Ozone purification technology</li>
+          <li>Zero compromise on hygiene at every production stage</li>
+          <li>Serving homes, offices, hotels, and institutions</li>
+          <li>Local manufacturing with pan-regional distribution in UP</li>
+        </ul>
+        <div class="about-info">
+          <strong>Sandip Kumar Gupta</strong> — Proprietor<br>
+          <strong>Ravi Gupta</strong> — Partner<br>
+          <strong>Priya Gupta</strong> — Partner<br>
+          Genesh Nagar, Sohanpar Road, Near B.N Public School,<br>
+          Bhatpar Rani, Deoria, Uttar Pradesh — 274702<br>
+          📞 <strong>+91 9696 33212</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CERTIFICATIONS ===== -->
+<section id="certifications">
+  <div class="container">
+    <div class="reveal" style="text-align:center">
+      <span class="section-tag">Compliance &amp; Safety</span>
+      <h2 class="section-title">Certified for Your Safety</h2>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card reveal" style="transition-delay:0.05s">
+        <span class="cert-icon">🏅</span>
+        <div class="cert-name">FSSAI Licensed</div>
+        <div class="cert-detail">License No. 12724032000244</div>
+      </div>
+      <div class="cert-card reveal" style="transition-delay:0.1s">
+        <span class="cert-icon">🔬</span>
+        <div class="cert-name">Lab Tested</div>
+        <div class="cert-detail">Regular third-party water quality testing</div>
+      </div>
+      <div class="cert-card reveal" style="transition-delay:0.15s">
+        <span class="cert-icon">♻️</span>
+        <div class="cert-name">BIS Standard</div>
+        <div class="cert-detail">Compliant with IS 14543 packaged water norms</div>
+      </div>
+      <div class="cert-card reveal" style="transition-delay:0.2s">
+        <span class="cert-icon">🛡️</span>
+        <div class="cert-name">ISO Process</div>
+        <div class="cert-detail">Hygienic production following ISO guidelines</div>
+      </div>
+      <div class="cert-card reveal" style="transition-delay:0.25s">
+        <span class="cert-icon">🌿</span>
+        <div class="cert-name">BPA Free</div>
+        <div class="cert-detail">100% food-grade PET packaging materials</div>
+      </div>
+      <div class="cert-card reveal" style="transition-delay:0.3s">
+        <span class="cert-icon">📋</span>
+        <div class="cert-name">GST Registered</div>
+        <div class="cert-detail">GSTIN: 09ABDFB5076D1ZK</div>
+      </div>
+    </div>
+
+    <!-- Product Brochure -->
+    <div class="brochure-row reveal" style="transition-delay:0.1s">
+      <div class="brochure-frame">
+        <img src="images/brochure.jpg" onerror="this.src='images/brochure.jpg'" alt="Jalveg Official Product Brochure" class="brochure-img" />
+      </div>
+      <div class="brochure-details">
+        <span class="brochure-tag">Official Product Brochure</span>
+        <h3 class="brochure-title">Jalveg Nutrient Water</h3>
+        <p class="brochure-sub">Packaged Drinking Water by Brother &amp; Brother Beverages Company — crafted with care for every home, office, and event.</p>
+        <div class="brochure-meta">
+          <div class="brochure-meta-item"><span class="bm-label">Brand</span><span class="bm-val">Jalveg — Nutrient Water</span></div>
+          <div class="brochure-meta-item"><span class="bm-label">FSSAI No.</span><span class="bm-val">12724032000244</span></div>
+          <div class="brochure-meta-item"><span class="bm-label">GST No.</span><span class="bm-val">09ABDFB5076D1ZK</span></div>
+          <div class="brochure-meta-item"><span class="bm-label">Address</span><span class="bm-val">Bhatpar Rani, Deoria, UP — 274702</span></div>
+          <div class="brochure-meta-item"><span class="bm-label">Phone</span><span class="bm-val">+91 9696 33212</span></div>
+        </div>
+        <a href="https://wa.me/91969633212?text=Hello%2C%20I%20want%20to%20order%20Jalveg%20water." target="_blank" class="brochure-cta">📲 Order on WhatsApp</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section id="testimonials" class="section-pad" style="background:#f5eeff;">
+  <div class="container">
+    <div class="reveal" style="text-align:center">
+      <span class="section-tag">Customer Reviews</span>
+      <h2 class="section-title">What Our Customers Say</h2>
+      <p class="section-sub" style="margin:0 auto">Trusted by hundreds of families, offices, and businesses across Deoria and surrounding districts.</p>
+    </div>
+    <div class="testimonials-grid">
+
+      <div class="testi-card reveal" style="transition-delay:0.05s">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"We switched to Jalveg for our office water supply 6 months ago. The water is crystal clear, fresh-tasting, and delivery is always on time. Highly recommended for bulk orders!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar">RV</div>
+          <div>
+            <div class="testi-name">Ramesh Verma</div>
+            <div class="testi-place">Office Manager, Deoria</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal" style="transition-delay:0.1s">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Jalveg paani ki quality bahut achhi hai. Hamare ghar mein sab log isi ko peena pasand karte hain. 20-litre jar bahut convenient hai. Price bhi affordable hai!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar">SK</div>
+          <div>
+            <div class="testi-name">Suresh Kumar</div>
+            <div class="testi-place">Family Customer, Bhatpar Rani</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal" style="transition-delay:0.15s">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"We use Jalveg 500ml bottles for our restaurant. Guests love the taste and always ask about the brand. FSSAI certified gives us confidence to serve it proudly."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">AP</div>
+          <div>
+            <div class="testi-name">Anil Pandey</div>
+            <div class="testi-place">Restaurant Owner, Deoria</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal" style="transition-delay:0.2s">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"I ordered Jalveg bottles for my daughter's wedding event — 500+ bottles. The team handled the bulk order perfectly. Fresh, sealed, and delivered on time. Will order again!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar">MM</div>
+          <div>
+            <div class="testi-name">Meena Mishra</div>
+            <div class="testi-place">Event Customer, Gorakhpur</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal" style="transition-delay:0.25s">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Sandip ji personally ensures quality. The water passes all our checks and the 250ml mini bottles are perfect for our school events. Great local brand with big-brand quality."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">DT</div>
+          <div>
+            <div class="testi-name">Dinesh Tripathi</div>
+            <div class="testi-place">School Administrator, Deoria</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal" style="transition-delay:0.3s">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Very satisfied with Jalveg water. It's pure, hygienic, and the taste is excellent. I have been using it for my household for the past year and will never switch!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar">PG</div>
+          <div>
+            <div class="testi-name">Priya Gupta</div>
+            <div class="testi-place">Household Customer, Bhatpar Rani</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section-pad">
+  <div class="container">
+    <div class="reveal" style="text-align:center">
+      <span class="section-tag">Get In Touch</span>
+      <h2 class="section-title">Order Jalveg or Ask Us Anything</h2>
+      <p class="section-sub" style="margin:0 auto">Whether you need a single case or bulk supply, we're here to help.</p>
+    </div>
+    <div class="contact-layout">
+      <div class="reveal-l">
+        <h3 style="font-size:1.3rem;font-weight:700;color:var(--blue-deep);margin-bottom:6px">Brother &amp; Brother Beverages</h3>
+        <p style="color:#4a6070;font-size:0.95rem">Jalveg Premium Packaged Drinking Water</p>
+        <div class="contact-info-items">
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <div class="contact-item-title">Phone</div>
+              <div class="contact-item-val">+91 9696 33212</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-item-title">Address</div>
+              <div class="contact-item-val">Genesh Nagar, Sohanpar Road, Near B.N Public School, Bhatpar Rani, Deoria, UP — 274702</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🏷️</div>
+            <div>
+              <div class="contact-item-title">FSSAI &amp; GST</div>
+              <div class="contact-item-val">FSSAI: 12724032000244 &nbsp;|&nbsp; GST: 09ABDFB5076D1ZK</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🚚</div>
+            <div>
+              <div class="contact-item-title">Bulk Orders</div>
+              <div class="contact-item-val">Available for homes, offices, events &amp; hotels</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-r">
+        <div class="contact-form">
+          <h3 style="font-size:1.2rem;font-weight:700;color:var(--blue-deep);margin-bottom:22px">Send Us a Message</h3>
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" id="inp-name" placeholder="e.g. Rajesh Kumar"
+              oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g,'')"
+              maxlength="50" required />
+            <span class="field-hint">Letters only</span>
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" id="inp-phone" placeholder="+91 XXXXX XXXXX"
+              oninput="this.value=this.value.replace(/[^0-9+]/g,'')"
+              maxlength="13" pattern="[0-9+]{10,13}" required />
+            <span class="field-hint">Numbers only, 10 digits</span>
+          </div>
+          <div class="form-group">
+            <label for="inp-requirement">Requirement</label>
+            <select id="inp-requirement">
+              <option value="">Select a product size</option>
+              <option>250 ml (Mini)</option>
+              <option>500 ml (Regular)</option>
+              <option>1 Litre</option>
+              <option>2 Litre</option>
+              <option>20 Litre (Bulk Jar)</option>
+              <option>Mixed / Bulk Order</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="inp-message">Message / Quantity</label>
+            <textarea id="inp-message" placeholder="Tell us about your requirement, quantity, delivery location..."></textarea>
+          </div>
+          <button class="btn-submit" onclick="handleSubmit(event)">Send Enquiry →</button>
+          <div id="form-success" style="display:none;margin-top:16px;text-align:center;color:var(--aqua);font-weight:600;font-size:0.95rem">
+            ✅ Thank you! We'll get back to you shortly.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-name">JALVEG</div>
+      <div class="footer-tagline">Pure. Fresh. Refreshing.</div>
+      <p style="font-size:0.85rem;line-height:1.7">Brother &amp; Brother Beverages<br>Genesh Nagar, Sohanpar Road,<br>Bhatpar Rani, Deoria, UP — 274702<br>FSSAI: 12724032000244 | GST: 09ABDFB5076D1ZK<br>📞 +91 9696 33212</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Quick Links</div>
+      <ul class="footer-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#factory">Our Factory</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Products</div>
+      <ul class="footer-links">
+        <li><a href="#products">250 ml Bottle</a></li>
+        <li><a href="#products">500 ml Bottle</a></li>
+        <li><a href="#products">1 Litre Bottle</a></li>
+        <li><a href="#products">2 Litre Bottle</a></li>
+        <li><a href="#products">20 Litre Jar</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 Brother &amp; Brother Beverages. All rights reserved.</span>
+    <span class="footer-fssai">FSSAI Lic. 12724032000244 | Jalveg Pure Packaged Drinking Water</span>
+  </div>
+</footer>
+
+<!-- ===== JAVASCRIPT ===== -->
 <script>
-  document.querySelector('form[name="contact"]').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const formData = new FormData(this);
-    fetch('/', {
-      method: 'POST',
-      body: formData,
-    })
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.error('Error:', error));
+// --- Bubble Generator ---
+(function() {
+  const container = document.getElementById('bubbles');
+  const colors = [
+    'rgba(255,255,255,0.5)',
+    'rgba(58,181,229,0.25)',
+    'rgba(0,201,177,0.2)',
+    'rgba(168,240,230,0.3)',
+  ];
+  for (let i = 0; i < 28; i++) {
+    const b = document.createElement('div');
+    b.classList.add('bubble');
+    const size = Math.random() * 40 + 10;
+    b.style.cssText = `
+      width: ${size}px;
+      height: ${size}px;
+      left: ${Math.random() * 100}%;
+      background: radial-gradient(circle at 30% 30%, ${colors[Math.floor(Math.random()*colors.length)]}, transparent);
+      animation-duration: ${Math.random() * 14 + 8}s;
+      animation-delay: ${Math.random() * 10}s;
+    `;
+    container.appendChild(b);
+  }
+})();
+
+// --- Navbar scroll effect ---
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 60);
+}, { passive: true });
+
+// --- Scroll Reveal ---
+const revealEls = document.querySelectorAll('.reveal, .reveal-l, .reveal-r');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      observer.unobserve(e.target);
+    }
   });
+}, { threshold: 0.12 });
+revealEls.forEach(el => observer.observe(el));
+
+// --- Animated Counters ---
+function animateCounter(el) {
+  const target = parseInt(el.dataset.target, 10);
+  const duration = 1800;
+  const start = performance.now();
+  function step(now) {
+    const progress = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    el.textContent = Math.floor(eased * target);
+    if (progress < 1) requestAnimationFrame(step);
+    else el.textContent = target;
+  }
+  requestAnimationFrame(step);
+}
+
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      animateCounter(e.target);
+      counterObserver.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('[data-target]').forEach(el => counterObserver.observe(el));
+
+// --- Smooth Scroll ---
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const id = a.getAttribute('href');
+    const target = document.querySelector(id);
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+// --- Form Submit with Validation ---
+function handleSubmit(e) {
+  e.preventDefault();
+  const name = document.getElementById('inp-name');
+  const phone = document.getElementById('inp-phone');
+  let valid = true;
+
+  [name, phone].forEach(f => f.classList.remove('error'));
+
+  if (!name.value.trim() || !/^[a-zA-Z\s]+$/.test(name.value.trim())) {
+    name.classList.add('error');
+    name.focus();
+    valid = false;
+  }
+  const digits = phone.value.replace(/\D/g,'');
+  if (digits.length < 10) {
+    phone.classList.add('error');
+    if (valid) phone.focus();
+    valid = false;
+  }
+
+  if (!valid) return;
+  document.getElementById('form-success').style.display = 'block';
+  setTimeout(() => document.getElementById('form-success').style.display = 'none', 5000);
+}
 </script>
+
+</body>
+</html>
